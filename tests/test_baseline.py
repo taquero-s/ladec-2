@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pytest
 
-from src.models.baseline import Baseline
+from src.solutions.baseline import Baseline
 
 
 class TestBaseline:
