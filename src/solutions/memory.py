@@ -1,7 +1,7 @@
 """Baseline for development of children functions."""
 
-from src.models.solution import Solution
+from src.solutions.baseline import Baseline
 
 
-class Memory(Solution):
+class Memory(Baseline):
     """Solution that focuses on the optimization of memory consumption."""

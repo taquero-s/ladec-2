@@ -21,7 +21,7 @@ class Baseline(Solution):
             for row in stream:
                 yield json.loads(row)
 
-    def q1(self) -> list[tuple[datetime.date, str]]:
+    def q1(self):
         # Calculate auxiliary stats
         # For each timestamp, we are getting the date part and the count of
         # users
@@ -50,7 +50,7 @@ class Baseline(Solution):
 
         return out
 
-    def q2(self) -> list[tuple[str, int]]:
+    def q2(self):
         # Calculate auxiliary stats for each encountered emoji
         aux = {}
         for data in self._iter_rows():
@@ -70,7 +70,7 @@ class Baseline(Solution):
 
         return out
 
-    def q3(self) -> list[tuple[str, int]]:
+    def q3(self):
         # This one was pretty straight forward since the data already contains a
         # mentioned users value.
         aux = {}
