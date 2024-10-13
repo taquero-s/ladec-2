@@ -1,21 +1,25 @@
 [tool.poetry]
 name = "ladec-2"
-version = "0.0.1"
+version = "0.1.0"
 description = "LATAM Airlines DE Challenge"
 authors = ["Enrique Olivares"]
 license = "LICENSE"
 readme = "README.md"
-# package-mode = false
+package-mode = false
 
 [tool.poetry.dependencies]
 python = ">=3.11,<3.12"
-duckdb = "^1.1.1"
+emoji = "^2.14.0"
+polars = "^1.9.0"
+
+[tool.poetry.group.benchmark.dependencies]
+memory-profiler = "0.61.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.3"
 
-[tool.poetry.group.benchmark.dependencies]
-memory-profiler = "0.61.0"
+[tool.poetry.group.dev]
+optional = true
 
 [build-system]
 requires = ["poetry-core"]
